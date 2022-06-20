@@ -1,2 +1,1 @@
-# steakdonenessclassifier
-Steak doneness classifier!
+#Steak Doneness Classifier
