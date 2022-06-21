@@ -4,7 +4,7 @@ Hello, everyone! My name is Pattanun Wattanacheevakosol and I am a Thai student 
 # Drawing Board + Inspiration
 So of course before deploying the model, I have to think of what kind of model should I do and what topic should it be. I thought about everything from video games to science, then I have an idea! I noticed that my parents especially my mom are really wary on the cook and doneness of their meat when they order a dish. My mom likes her steak well done and if there is a little pink inside the steak, she sends it back to the chef immediately. I said to myself, why not do a model which can determine the doneness or cook on the steak? With inspiration from my parents, I decided to start coding the steak doneness classifier AI.
 # Failing the Initial Project
-Before coming up with the steak project. I decided to do a 
+Before coming up with the steak project. I decided to do a results prediction model from a video game tournament called Minecraft Championship. Unfortunately, the data size was way too small containing only a few thousand scores for every tournament participator. I tried to bring up the model accuracy but my attempts were futile. Thus, I decided to change my project from Minecraft Championship to steak doneness classifier with only 2 weeks til due date.
 # Steak Doneness Scale
 - rare (125 degrees Fahrenheit)
 - medium rare (135 degrees Fahrenheit)
