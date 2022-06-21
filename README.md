@@ -45,14 +45,25 @@ The main purpose for this AI model is to determine the doneness of the steak whi
 In conclusion, I programmed and trained an AI model using FastAI which can predict the doneness of a steak image (ranging from rare to well done) which has a 60% accuracy and this model will help people who are concerned on the doneness of the steak and training chefs as well. Finally, I would like to thank my mentors from the AI Builders Community especially P Mick, my family, my friends, and Stack Overflow! Without the aforementioned, I would not have succeeded in making this project. Thank you for reading this article!
 # Links
 Steak Doneness Classifier:
+
 Google Colab: https://colab.research.google.com/drive/10Ou7pwsSA-b71ho2SntqZy840U7j4qCJ#scrollTo=6PzW7SktOcP_
+
 GitHub:
+
 Streamlit:
+
 Social Media Contacts
+
 Email: satangpattanun@hotmail.com
+
 Reddit (active): u/TheTrapperBeingXD
+
 Instagram (inactive): satangpattanun
+
 Facebook (inactive): Satang Pattanun
+
 AI Builders Contacts
+
 Facebook: AI Builders
+
 YouTube: AI Builders
