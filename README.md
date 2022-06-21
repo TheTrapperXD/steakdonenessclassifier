@@ -48,7 +48,7 @@ Steak Doneness Classifier:
 
 Google Colab: https://colab.research.google.com/drive/10Ou7pwsSA-b71ho2SntqZy840U7j4qCJ#scrollTo=6PzW7SktOcP_
 
-GitHub:
+GitHub: https://github.com/TheTrapperXD/steakdonenessclassifier
 
 Streamlit:
 
