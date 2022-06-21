@@ -1,5 +1,5 @@
 # Steak Doneness Classifier using AI
-#Introduction
+# Introduction
 Hello, everyone! My name is Pattanun Wattanacheevakosol and I am a Thai student studying in 11th Grade from the AI Builders community, a community where people who are interested in AI share ideas, knowledge, and code. I have been granted access to join the community and as an assignment, I decided to deploy a model where it can determine the doneness of a steak (via an image) using AI. This is my first ever AI model and I have no experience in machine learning beforehand. So without further ado, here is the model!
 # Drawing Board + Inspiration
 So of course before deploying the model, I have to think of what kind of model should I do and what topic should it be. I thought about everything from video games to science, then I have an idea! I noticed that my parents especially my mom are really wary on the cook and doneness of their meat when they order a dish. My mom likes her steak well done and if there is a little pink inside the steak, she sends it back to the chef immediately. I said to myself, why not do a model which can determine the doneness or cook on the steak? With inspiration from my parents, I decided to start coding the steak doneness classifier AI.
