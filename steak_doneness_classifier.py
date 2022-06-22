@@ -97,7 +97,7 @@ def label_func(f):
 
 
 class Predict:
-    def init(self, filename):
+    def __init__(self, filename):
 
         self.learn_inference = load_learner(Path() / filename)
         self.img = self.get_image_from_upload()
@@ -124,7 +124,7 @@ class Predict:
             st.write(f"Click the button to classify")
 
 
-if name == "main":
+if __name__ == "__main__":
 
     file_name = "steak_doneness_classifier.pth"
 
