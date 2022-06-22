@@ -57,7 +57,7 @@ img {
 class FileUpload(object):
 
     def __init__(self):
-        self.fileTypes = ["png", "jpg"]
+        self.fileTypes = ["png", "jpg", "jpeg"]
 
     def run(self):
         """
@@ -69,7 +69,7 @@ class FileUpload(object):
         file = st.file_uploader("Upload file", type=self.fileTypes)
         show_file = st.empty()
         if not file:
-            show_file.info("Please upload a file of type: " + ", ".join(["png", "jpg"]))
+            show_file.info("Please upload a file of type: " + ", ".join(["png", "jpg", "jpeg"]))
             return
         content = file.getvalue()
         if isinstance(file, BytesIO):
