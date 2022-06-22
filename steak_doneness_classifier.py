@@ -124,7 +124,7 @@ class Predict:
             st.write(f"Click the button to classify")
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
 
     file_name = "steak_doneness_classifier.pth"
 
