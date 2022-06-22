@@ -126,6 +126,6 @@ class Predict:
 
 if __name__ == '__main__':
 
-    file_name = "steak_doneness_classifier.pth"
+    file_name = "steakdonenessclassifier.pkl"
 
     predictor = Predict(file_name)
