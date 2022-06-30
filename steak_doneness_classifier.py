@@ -37,53 +37,6 @@ add_selectbox = st.sidebar.write(
 )
 
  
-import pandas as pd
-from PIL import Image 
-
-
-from enum import Enum
-from io import BytesIO, StringIO
-from typing import Union
-
-STYLE = """
-<style>
-img {
-    max-width: 100%;
-}
-</style>
-"""
-
-
-class FileUpload(object):
-
-    def __init__(self):
-        self.fileTypes = ["png", "jpg", "jpeg"]
-
-    def run(self):
-        """
-        Upload File on Streamlit Code
-        :return:
-        """
-        st.info(__doc__)
-        st.markdown(STYLE, unsafe_allow_html=True)
-        file = st.file_uploader("Upload file", type=self.fileTypes)
-        show_file = st.empty()
-        if not file:
-            show_file.info("Please upload a file of type: " + ", ".join(["png", "jpg", "jpeg"]))
-            return
-        content = file.getvalue()
-        if isinstance(file, BytesIO):
-            show_file.image(file)
-        else:
-            data = pd.read_csv(file)
-            st.dataframe(data.head(10))
-        file.close()
-
-
-if __name__ ==  "__main__":
-    helper = FileUpload()
-    helper.run()
-    
 from fastai.vision.widgets import *
 from fastai.vision.all import *
 
@@ -91,41 +44,34 @@ from pathlib import Path
 
 import streamlit as st
 
-
-def label_func(f):
-    return f[0].isupper()
-
-
 class Predict:
     def __init__(self, filename):
-
-        self.learn_inference = load_learner(Path() / filename)
+        self.learn_inference = load_learner(Path()/filename)
         self.img = self.get_image_from_upload()
         if self.img is not None:
             self.display_output()
             self.get_prediction()
-
+    
     @staticmethod
     def get_image_from_upload():
-        uploaded_file = st.file_uploader("Upload Files", type=["png","jpg"])
+        uploaded_file = st.file_uploader("Upload Files",type=['png','jpeg', 'jpg'])
         if uploaded_file is not None:
             return PILImage.create((uploaded_file))
         return None
 
     def display_output(self):
-        st.image(self.img.to_thumb(500, 500), caption="Uploaded Image")
+        st.image(self.img.to_thumb(500,500), caption='Uploaded Image')
 
     def get_prediction(self):
 
-        if st.button("Classify"):
+        if st.button('Classify'):
             pred, pred_idx, probs = self.learn_inference.predict(self.img)
-            st.write(f"Prediction: {pred}; Probability: {probs[pred_idx]:.04f}")
-        else:
-            st.write(f"Click the button to classify")
+            st.write(f'Prediction: {pred}; Probability: {probs[pred_idx]:.04f}')
+        else: 
+            st.write(f'Click the button to classify') 
 
+if __name__=='__main__':
 
-if __name__ == '__main__':
-
-    file_name = "steakdonenessclassifier.pkl"
+    file_name='steakdonenessclassifier.pkl'
 
     predictor = Predict(file_name)
