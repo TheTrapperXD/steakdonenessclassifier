@@ -50,17 +50,13 @@ Google Colab: https://colab.research.google.com/drive/10Ou7pwsSA-b71ho2SntqZy840
 
 GitHub: https://github.com/TheTrapperXD/steakdonenessclassifier
 
-Streamlit:
+Streamlit: https://share.streamlit.io/thetrapperxd/steakdonenessclassifier/main/steak_doneness_classifier.py
 
 Social Media Contacts
 
 Email: satangpattanun@hotmail.com
 
 Reddit (active): u/TheTrapperBeingXD
-
-Instagram (inactive): satangpattanun
-
-Facebook (inactive): Satang Pattanun
 
 AI Builders Contacts
 
