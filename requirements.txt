@@ -1,7 +1,7 @@
 asgiref==3.5.2
 certifi==2022.6.15
 distlib==0.3.4
-Django==4.0.5
+Django==4.0.6
 fastai==2.7.2
 filelock==3.7.1
 numpy==1.22.4
