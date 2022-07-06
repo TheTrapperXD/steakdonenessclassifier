@@ -1,0 +1,2 @@
+steakdoneness.pkl filter=lfs diff=lfs merge=lfs -text
+steakdonenessclassifier.pkl filter=lfs diff=lfs merge=lfs -text
