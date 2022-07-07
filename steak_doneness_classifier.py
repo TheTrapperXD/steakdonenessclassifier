@@ -17,7 +17,7 @@ add_selectbox = st.sidebar.write(
 )
 
 add_selectbox = st.sidebar.write(
-    'Links [link]()',
+    'Streamlit [link](https://share.streamlit.io/thetrapperxd/steakdonenessclassifier/main/steak_doneness_classifier.py)',
 )
 
 add_selectbox = st.sidebar.write(
@@ -54,6 +54,7 @@ class Predict:
     
     @staticmethod
     def get_image_from_upload():
+        st.write("Upload an image file to classify the steak doneness!")
         uploaded_file = st.file_uploader("Upload Files",type=['png','jpeg', 'jpg'])
         if uploaded_file is not None:
             return PILImage.create((uploaded_file))
