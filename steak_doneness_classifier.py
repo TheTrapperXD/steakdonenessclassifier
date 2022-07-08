@@ -4,16 +4,15 @@ import numpy as np
 st.title('Steak Doneness Classifier')
 
 add_selectbox = st.sidebar.write(
-    'Steak Doneness Classifier'
-)
-
-add_selectbox = st.sidebar.image(
-    'https://i.pinimg.com/originals/41/4e/57/414e57ac74d11b5bba0632f16a560589.jpg',
-    use_column_width=True
+    'About Me'
 )
 
 add_selectbox = st.sidebar.write(
-    'This web appliaction can predict the doneness of a steak via image input. The doneness of steak ranges from rare to well done!'
+    'My name is Pattanun Wattanacheevakosol and I am an aspired learner on artificial intelligence!'
+)
+
+add_selectbox = st.sidebar.write(
+    'Patreon [link]()',
 )
 
 add_selectbox = st.sidebar.write(
