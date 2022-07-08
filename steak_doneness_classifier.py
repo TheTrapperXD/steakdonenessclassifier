@@ -12,7 +12,7 @@ add_selectbox = st.sidebar.write(
 )
 
 add_selectbox = st.sidebar.write(
-    'Patreon [link]()',
+    'Patreon (coming soon) [link]()',
 )
 
 add_selectbox = st.sidebar.write(
