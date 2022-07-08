@@ -21,7 +21,7 @@ add_selectbox = st.sidebar.write(
 )
 
 add_selectbox = st.sidebar.write(
-    'Google Collab [link]()',
+    'Google Collab [link](https://colab.research.google.com/drive/10Ou7pwsSA-b71ho2SntqZy840U7j4qCJ#scrollTo=VUTA5XB-M_O2)',
 )
 
 add_selectbox = st.sidebar.write(
@@ -64,12 +64,8 @@ class Predict:
         st.image(self.img.to_thumb(500,500), caption='Uploaded Image')
 
     def get_prediction(self):
-
-        if st.button('Classify'):
             pred, pred_idx, probs = self.learn_inference.predict(self.img)
             st.write(f'Prediction: {pred}; Probability: {probs[pred_idx]:.04f}')
-        else: 
-            st.write(f'Click the button to classify') 
 
 if __name__=='__main__':
 
