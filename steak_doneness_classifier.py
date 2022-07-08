@@ -54,8 +54,14 @@ class Predict:
     
     @staticmethod
     def get_image_from_upload():
-        st.write("Upload an image file to classify the steak doneness!")
-        uploaded_file = st.file_uploader("Upload Files",type=['png','jpeg', 'jpg'])
+        st.write("This web appliaction can predict the doneness of a steak via image input. The doneness of steak ranges from rare to well done!")
+        st.write("Steak Doneness Scale")
+        st.write("01-rare")
+        st.write("02-mediumrare")
+        st.write("03-medium")
+        st.write("04-mediumwell")
+        st.write("05-well")
+        uploaded_file = st.file_uploader("Upload an image file to classify the steak doneness!",type=['png','jpeg', 'jpg'])
         if uploaded_file is not None:
             return PILImage.create((uploaded_file))
         return None
