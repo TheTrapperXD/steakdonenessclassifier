@@ -54,6 +54,8 @@ class Predict:
     
     @staticmethod
     def get_image_from_upload():
+        from PIL import Image
+        image = Image.open('mediumrare05.jpg')
         st.write("This web appliaction can predict the doneness of a steak via image input. The doneness of steak ranges from rare to well done!")
         st.write("Steak Doneness Scale")
         st.write("01-rare")
